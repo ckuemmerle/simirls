@@ -20,7 +20,6 @@ Please cite this work as:
  volume = {36},
  year = {2023}
 }
-
 ```
 
 ## Installation
