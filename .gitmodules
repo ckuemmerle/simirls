@@ -1,0 +1,3 @@
+[submodule "algorithms/riemannian_thresholding"]
+	path = algorithms/riemannian_thresholding
+	url = https://github.com/ckuemmerle/riemannian_thresholding.git
