@@ -1,0 +1,100 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{mycolor2}{rgb}{0.85000,0.32500,0.09800}%
+\definecolor{mycolor3}{rgb}{0.92900,0.69400,0.12500}%
+\definecolor{mycolor4}{rgb}{0.49400,0.18400,0.55600}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\figurewidth,
+height=\figureheight,
+at={(0\figurewidth,0\figureheight)},
+scale only axis,
+xmin=0,
+xmax=12,
+xlabel style={font=\color{white!15!black}},
+xlabel={iteration \$k\$},
+ymode=log,
+ymin=1e-14,
+ymax=100,
+yminorticks=true,
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=white!15!black},
+xlabel style={font=\tiny},ylabel style={font=\tiny},
+]
+\addplot [color=mycolor1, mark size=4.0pt, mark=x, mark options={solid, mycolor1}]
+  table[row sep=crcr]{%
+1	0.908957122304221\\
+2	0.660395812170821\\
+3	0.467398778374254\\
+4	0.288343883883047\\
+5	0.181861531199963\\
+6	0.0912688847742466\\
+7	0.0330267601215323\\
+8	0.0173193082206571\\
+9	0.00478086055360586\\
+10	0.000462809725872112\\
+11	3.69435994800441e-07\\
+12	2.25272566609678e-12\\
+};
+\addlegendentry{Rank Objective $\sqrt{\mathcal{F}_{lr,\varepsilon_k}(\mathbf{X}^{(k)})}$}
+
+\addplot [color=mycolor2, mark size=4.0pt, mark=+, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+1	0.545888565192268\\
+2	0.426197862838523\\
+3	0.35098298949931\\
+4	0.206950890256743\\
+5	0.129459215066694\\
+6	0.0591273930202549\\
+7	0.017956306323623\\
+8	0.0101563281144222\\
+9	0.00239019674790693\\
+10	5.45290987229027e-05\\
+11	2.09708775309565e-07\\
+12	4.3992092158033e-13\\
+};
+\addlegendentry{Sparsity Objective $\sqrt{\mathcal{F}_{sp,\delta_k}(\mathbf{X}^{(k)})}$}
+
+\addplot [color=mycolor3, mark size=4.0pt, mark=asterisk, mark options={solid, mycolor3}]
+  table[row sep=crcr]{%
+1	1.06028174359235\\
+2	0.785981709087993\\
+3	0.584508919473105\\
+4	0.354923747234274\\
+5	0.223233744976156\\
+6	0.108747680128389\\
+7	0.0375924968698944\\
+8	0.0200775854626478\\
+9	0.00534506016118898\\
+10	0.00046601101378546\\
+11	4.24806690973705e-07\\
+12	2.29527848940716e-12\\
+};
+\addlegendentry{IRLS Objective $\sqrt{\mathcal{F}_{\varepsilon_k,\delta_k}(\mathbf{X}^{(k)})}$}
+
+\addplot [color=mycolor4, mark size=4.0pt, mark=o, mark options={solid, mycolor4}]
+  table[row sep=crcr]{%
+1	0.913106509790089\\
+2	0.757275769947384\\
+3	0.517673901317392\\
+4	0.328935299390968\\
+5	0.189917620955421\\
+6	0.0911879292870496\\
+7	0.0277563870342638\\
+8	0.0146070679581609\\
+9	0.00312419360977059\\
+10	4.66559490611061e-05\\
+11	1.99836420787947e-07\\
+12	1.17518638256287e-13\\
+};
+\addlegendentry{Rel. Frob. error $\|\mathbf{X}^{(k)} - \mathbf{X}_\star\|_F/\|\mathbf{X}_\star\|_F$}
+
+\end{axis}
+\end{tikzpicture}%
