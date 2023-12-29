@@ -16,7 +16,7 @@ Please cite this work as:
 @inproceedings{KuemmerleMaly2023,
  title = {Recovering Simultaneously Structured Data via Non-Convex Iteratively Reweighted Least Squares},
  author = {K{\"u}mmerle, Christian and Maly, Johannes},
- booktitle = {Advances in Neural Information Processing Systems (NeurIPS 2023)},
+ booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
  volume = {36},
  year = {2023}
 }
