@@ -36,7 +36,7 @@ Please cite this work as:
 * `run_single_Example_LRRS`: Run to choose one of the problem setups of folder `/Examples/` via text input. Use repository's main folder as current folder when doing this.
 
 ### Subfolders
-* `/Examples`: Contains files to define the parameters various example problem setups.
+* `/Examples`: Contains files to define the parameters for various example problem setups
 * `/algorithms`: Contains algorithm implementations
 * `/experiment_setup`: Code to setup and run experiments
 * `/experiments`: Scripts to load data and reproduce experiments of Figures 1-7 in [[KM23]](#KM23)
